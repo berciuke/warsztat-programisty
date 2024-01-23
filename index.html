@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super strona</title>
+    <style>
+        * {
+            margin: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #424549;
+            color: lightgray;
+        }
+        body {
+            margin: 2rem;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            text-align: justify;
+        }
+        a {
+            color: lightblue;
+            margin: 0;
+        }
+        tr:first-child {
+            font-weight: bold;
+        }
+        td {
+            padding: 1rem;
+            border: 1px solid black;
+        }
+        .foggy {
+            width: 30rem;
+            height: 20rem;
+            background-image: url('foggy.jpg');
+            background-position: center center;
+            border-radius: 20%;
+        }
+        .valley {
+            position: relative;
+            left: 100rem;
+            width: 30rem;
+            height: 20rem;
+            background-image: url('valley.jpg');
+            background-position: center center;
+            border-radius: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Witaj na mojej stronie</h1>
+        <h2>Powstałej w ramach <a href="https://stepik.org/lesson/591505/step/4?unit=586464">zadania 4/15.2 stepik :)</a></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dicta ab laboriosam ipsum, reprehenderit, tempore quas asperiores deserunt, voluptates dolores quibusdam fugiat amet. Temporibus praesentium in facere impedit id ad quis, ipsam sequi eum vero incidunt quisquam. Magnam ipsam et, odio possimus consequuntur, ducimus quasi provident officiis doloribus incidunt voluptatum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium, qui sequi perspiciatis placeat vel unde voluptatem expedita obcaecati repellendus aut facilis nisi. Numquam nulla neque esse tenetur laboriosam modi et quis sed dicta quaerat, temporibus iure doloremque sapiente. Nisi velit eaque sunt deserunt aut minus blanditiis adipisci perspiciatis iusto?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta sunt blanditiis ipsa, repellat numquam hic tempore, soluta vel eaque quidem accusamus? Assumenda, corporis? Nam, at doloremque quis aperiam, minima obcaecati repellat earum quam odio modi delectus omnis maxime, veritatis inventore voluptatem numquam ea corporis nihil commodi iusto beatae deleniti?</p>
+    </div>
+    <table>
+        <tr>
+        <td>Imię</td> <td>Drugie imię</td> <td>Nazwisko</td>
+        </tr>
+        <tr>
+        <td>Jan</td> <td>Janusz</td> <td>Kowalski</td>
+        </tr>
+        <tr>
+        <td>Anna</td> <td>-</td> <td>Nowak</td>
+        </tr>
+    </table>
+    <div class="foggy"><div class="valley"></div>
+    </div>
+</body>
+</html>
