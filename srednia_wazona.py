@@ -32,33 +32,33 @@ def oblicz_srednia(courses_ects):
         ects_sum += ects
         grades_sum += ects * float(grade)
     return grades_sum, ects_sum
+def wyswietl_srednia(grades_sum, ects_sum):
+    print(f'Twoja średnia: {round(grades_sum / ects_sum, 3)}')
+    print('Minimalna średnia na stypendium w poprzednich latach: ')
+    print('2022/23: 4.48')
+    print('2021/22: 4.42')
+    print('2020/21: 4.04')
 print("1. Oblicz średnią za 1. semestr")
 print("2. Oblicz średnią za 2. semestr")
 print("3. Oblicz średnią za 1. rok")
 wybor = input("? : ")
-if wybor not in ('1', '2','3'):
+if wybor not in ('1', '2', '3', 'arek'):
     print("Nieprawidłowa opcja")
 elif wybor == '1':
     grades_sum, ects_sum = oblicz_srednia(courses_ects_sem1)
-    print(f'Twoja średnia: {round(grades_sum / ects_sum, 2)}')
-    print('Minimalna średnia na stypendium w poprzednich latach: ')
-    print('2022/23: 4.48')
-    print('2021/22: 4.42')
-    print('2020/21: 4.04')
+    wyswietl_srednia(grades_sum, ects_sum)
 elif wybor == '2':
     grades_sum, ects_sum = oblicz_srednia(courses_ects_sem2)
-    print(f'Twoja średnia: {round(grades_sum / ects_sum, 2)}')
-    print('Minimalna średnia na stypendium w poprzednich latach: ')
-    print('2022/23: 4.48')
-    print('2021/22: 4.42')
-    print('2020/21: 4.04')
-else:
+    wyswietl_srednia(grades_sum, ects_sum)
+elif wybor == '3':
     # Łączenie słownika z 2. semestru ze słownikem z 1. semestru
     for key, value in courses_ects_sem2.items():
         courses_ects_sem1[key] = value
     grades_sum, ects_sum = oblicz_srednia(courses_ects_sem1)
-    print(f'Twoja średnia: {round(grades_sum / ects_sum, 2)}')
-    print('Minimalna średnia na stypendium w poprzednich latach: ')
-    print('2022/23: 4.48')
-    print('2021/22: 4.42')
-    print('2020/21: 4.04')
+    wyswietl_srednia(grades_sum, ects_sum)
+else:
+    print('obliczam średnią dla arka :~D')
+    wywolanie = oblicz_srednia(courses_ects_sem2)
+    grades_sum = 142.0 + wywolanie[0]
+    ects_sum = 30 + wywolanie[1]
+    wyswietl_srednia(grades_sum, ects_sum)
