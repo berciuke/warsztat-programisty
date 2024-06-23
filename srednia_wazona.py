@@ -17,8 +17,15 @@ courses_ects_sem2 = {
     'Bazy danych': 5,
     'Języki programowania I': 4,
     'Języki programowania II': 4,
-    'Matematyczne podstawy informatyki': 2
+    'Matematyczne podstawy informatyki': 2,
+    'Społeczne i prawne aspekty informatyki': 1
 }
+# look in my eyes tell me your tale
+# do you see the road the map to me soul
+# look tell me the signs whenever the smoke clear out of my face
+# am i picture-perfect or do i look fried
+# all of that green and yellow, that drip from eyes is telln'
+# tell you demise i went to my side
 def oblicz_srednia(courses_ects):
     grades_sum = 0
     ects_sum = 0
